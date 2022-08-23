@@ -193,13 +193,13 @@ Note that I have changed the constant just to $C$ on $\psi_n$, and we'll solve f
 \end{align*}
 which when we solve for $E_n$ gives us
 \[
-   \boxed{E_n = \frac{n^2\hbar^2\pi^2}{2mL}.}
+   \boxed{E_n = \frac{n^2\hbar^2\pi^2}{2mL^2}.}
 \]
 What have we found? We have found that to each solution $\psi_n$ there corresponds an energy value $E_n$. We've also seen that there are infinitely many solutions but they correspond to \boldgreen{quantized} energy levels! We can disregard some of our solutions as well. In fact, we keep only $n=1,2,3,\dots$ as $n=0$ gives us $\psi_0(x)=0$ which is not a physical solution (we'll see more on this in just a bit).  Also, we have that $\psi_n(x)=-\psi_{-n}(x)$, so the negative values for $n$ are simply redundant.
 
 The interpretation of the $\psi_n$ is that they are the allowable \boldgreen{stationary states}\index{states!stationary} of the system. In this case, the system is the particle in a 1-dimensional box. In general, a \boldgreen{wavefunction}\index{wavefunction} $\Psi(x,t)$ will be a sum of these states, but with an added time dependence that we did not talk about here. The wavefunction describes a \boldgreen{probability} of a particle being at a position.  How so? Well, the following integral gives us the probability (a number $P\in [0,1]$) of a particle with a wavefunction $\Psi(x,t)$ being the region $[a,b]$.
 \[
-P([a,b]=\int_a^b |\Psi(x,t)|^2 dx=\int_a^b \Psi^* \Psi dx,
+P([a,b])=\int_a^b |\Psi(x,t)|^2 dx=\int_a^b \Psi^* \Psi dx,
 \]
 where $|\Psi(x,t) |$ represents the modulus of the complex wavefunction $\Psi(x,t)$. This interpretation of quantum mechanics is just another part of what makes the theory so different from classical theory! We can only make predictions in a probabalistic way! Truly, it's fascinating. Keep in mind, we really can only do this for the initial profile $\Psi(x,0)$ since we have not introduced time dependence just yet.
 
@@ -226,7 +226,7 @@ We refer to this $\Psi(x)$ as a superposition of states.  Without adding in time
 
 Next, we can consider the \boldgreen{inner product}\index{inner product} between states $\psi_n$ and $\psi_m$ which tells us how much of each state ``points in the same direction"
 \[
-\langle \psi_n,\psi_m \rangle \coloneqq \int_{\infty}^\infty \psi_n^*(x) \psi_m(x) dx.
+\langle \psi_n,\psi_m \rangle \coloneqq \int_{-\infty}^\infty \psi_n^*(x) \psi_m(x) dx.
 \]
 If we evaluate this integral, we find that
 \begin{align*}
